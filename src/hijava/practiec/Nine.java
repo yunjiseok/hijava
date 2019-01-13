@@ -7,7 +7,7 @@ public class Nine {
 			for(int i=1; i<20; i++) {
 				System.out.println(j+"x"+i+"="+j*i );
 			}
-			System.out.println("\n");//´ÜÀÌ ³¡³¯¶§¸¶´Ù ÇÑÁÙ¾¿ °Ç³Ê¶Ú´Ù
+			System.out.println("\n");//ë‹¨ì´ ëë‚  ë•Œë§ˆë‹¤ ëœ€
 		}
 
 	}
