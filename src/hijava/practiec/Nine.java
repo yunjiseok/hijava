@@ -7,7 +7,7 @@ public class Nine {
 			for(int i=1; i<20; i++) {
 				System.out.println(j+"x"+i+"="+j*i );
 			}
-			System.out.println("\n");
+			System.out.println("\n");//단이 끝날때마다 한줄씩 건너뛴다
 		}
 
 	}
