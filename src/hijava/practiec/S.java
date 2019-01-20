@@ -4,21 +4,33 @@ public class S {
 
 	public static void main(String[] args) {
 		
-		int t = 0;
-		for(int i = 2; i <= 100; i++) {
-			boolean isprime = true;
-			for(int j = 2; j < i; j++) {
-				if(i % j == 0) {
-					isprime = false;
-					break;
-				}
+		
+		if(args.length > 0) {
+			for (int i = 0; i < args.length; i++) {
+				System.out.println("args["args[i]);
 			}
-			if(isprime) {
-				t += i;
+		}
+		
+		int t = 0;
+		for(int num = 2; num <= 100; num++) {
+			
+			
+			if(isPrime(num)) {
+				t += num;
 			}
 		}
 		System.out.print(t);
 
+	}
+	
+	public static boolean isPeim(int num) {
+		for(int j = 2; j < i; j++) {
+			if(i % j == 0) {
+				return false;
+			}
+		}
+		
+		return ;
 	}
 
 }
