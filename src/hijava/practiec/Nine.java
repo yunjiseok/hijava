@@ -9,7 +9,7 @@ public class Nine {
 			for(int i = 1; i <= 9 ; i++) {
 				System.out.println(j+"x"+i+"="+j*i );
 			}
-			System.out.println("\n");//단이 끝날 때마다 뜀
+			System.out.println();//단이 끝날 때마다 뜀
 		}
 		
 		
@@ -55,7 +55,7 @@ public class Nine {
 			for(int i = 1; i <= 9 ; i++) {
 				System.out.println(j+"x"+i+"="+j*i );
 			}
-			System.out.println("\n");//단이 끝날 때마다 뜀
+			System.out.println();//단이 끝날 때마다 뜀
 		}
 		
 		

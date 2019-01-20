@@ -6,7 +6,7 @@ public class P {
 		int t = 5050;
 		for(int i = 1; i<=100; i++) {
 			for(int j = 2; j<=50; j++) {
-				if(2*j == i || 3*j == i || 5*j == i || 7*j == i) { // 4는 2x2 6은 2x3 8은 2x2x2 9는 2x2
+				if(2*j == i || 3*j == i || 5*j == i || 7*j == i) { // 4는 2x2 6은 2x3 8은 2x2x2 9는 3x3
 					t -= i;
 					break;
 				}
