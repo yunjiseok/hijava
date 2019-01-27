@@ -1,6 +1,6 @@
 package hijava.oop;
 
-import hijava.practice.Man;
+import hijava.practiec.Man;
 
 public class American extends Man {
 	public American(String name) {
