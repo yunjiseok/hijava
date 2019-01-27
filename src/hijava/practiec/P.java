@@ -1,20 +1,44 @@
 package hijava.practiec;
 
+import java.util.ArrayList;
+
 public class P {
 
 	public static void main(String[] args) {
-		int t = 5050;
-		for(int i = 1; i<=100; i++) {
-			for(int j = 2; j<=50; j++) {
-				if(2*j == i || 3*j == i || 5*j == i || 7*j == i) { // 4는 2x2 6은 2x3 8은 2x2x2 9는 3x3
-					t -= i;
-					break;
-				}
+		if (args.length > 0) {
+			for (int i = 0; i < args.length; i++) {
+				System.out.println("args[" + i + "] = " + args[i] );
+			}
+		}
+		
+		int total = 0;
+		
+		for (int num = 2; num <= 100; num++) {
 			
+			if (isPrime(num)) {
+				total += num;
+//				primeList.add(num);
+			}
 		}
+		
+		System.out.println("Total is " + total);
+		
+	}
+	
+	// 소수를 판별하라!!
+	
+	private static ArrayList<Integer> primeList = new ArrayList<>();
+	
+	private static boolean isPrime(int num) {
+		
+//		for (int j = 2; j < num; j++) {
+		for (Integer j : primeList) {
+			if (num % j == 0) {
+				return false;
+			}
 		}
-		System.out.print(t-1);
-
+		primeList.add(num);
+		return true;
 	}
 
 }
