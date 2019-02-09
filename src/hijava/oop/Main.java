@@ -30,7 +30,15 @@ public class Main {
 //		software();
 //		calculator();
 		
-		testinterface();
+//		testinterface();
+		
+		total();
+	}
+
+	private static void total() {
+		int[] arr = new int[] { 1, 2, 5, 9};
+		SubTotal st = new SubTotal();
+		System.out.println("Total=" + st.sum(arr));
 	}
 
 	private static void testinterface() throws SQLException, IOException {
@@ -61,9 +69,10 @@ public class Main {
 
 	private static void netsport() {
 		NetSport pp = new Pingpong();
-
+		NetSport te = new Volleyball();
 		pp.play();
-
+		System.out.println("-----------");
+		te.play();
 	}
 
 	private static void animal() {
