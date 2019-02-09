@@ -35,7 +35,7 @@ public class Main {
 		SoftWare site = new WebSite();
 		
 		site.process();
-		System.out.println("---------~--------ㅡ-------------");
+		System.out.println("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
 		app.process();
 		
 		Calculator n = new CalculatorImpl();
