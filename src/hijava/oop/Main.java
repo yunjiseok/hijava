@@ -38,6 +38,12 @@ public class Main {
 		System.out.println("---------~--------ㅡ-------------");
 		app.process();
 		
+		Calculator n = new CalculatorImpl();
+		
+		n.add(4, 5);
+		n.sub(4, 5);
+		n.mul(4, 5);
+		n.div(4, 5);
 		
 		
 //		long token = System.currentTimeMillis();
