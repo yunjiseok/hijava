@@ -10,15 +10,14 @@ public class Son extends Mom {
 	}
 	
 	public void say() {
-		System.out.println("Son said....");
+		System.out.println("Son said...");
 	}
 	
 	public void ttt() {
-		System.out.println("ttt");
-	}
-	
-	public void drinkMilk() {
-		System.out.println("Drinking Milk!");
+		System.out.println("TTT");
 	}
 
+	public void drinkMilk() {
+		System.out.println("Drinking Milk!!");
+	}
 }

@@ -7,8 +7,4 @@ public class Korean extends Man {
 		this.setName(name);
 	}
 	
-	public void eat() {
-		System.out.println("우리나라 사람은 밥을 먹구요,");
-	}
-	
 }

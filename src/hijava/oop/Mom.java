@@ -22,8 +22,8 @@ public class Mom {
 	public void say() {
 		System.out.println("Mom said...");
 	}
+
 	public void drinkBeer() {
-		System.out.println("Drinking Beer!");
+		System.out.println("Drinking Beer!!");
 	}
-	
 }

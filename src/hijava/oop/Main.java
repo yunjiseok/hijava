@@ -7,30 +7,65 @@ import hijava.practiec.Man;
 public class Main {
 
 	public static void main(String[] args) {
+		AbstSuper sp = new AbstChild();
+		int i = 5;
+		int j = 10;
+		
+		Animal dog = new Dog();
+		Animal cat = new cat();
+		
+		dog.bark();
+		cat.bark();
+		
+		System.out.println("min=" + sp.min(i, j) +", max=" + sp.max(i, j));
+		
+		
+		NetSport ping = new Pingpong();
+		NetSport volley = new Volleyball();
+		
+		ping.hit();
+		ping.serve();
+		ping.score();
+		
+		volley.hit();
+		volley.serve();
+		volley.score();
+		
+		SoftWare app = new MobileApp();
+		SoftWare site = new WebSite();
+		
+		site.process();
+		System.out.println("---------~--------ㅡ-------------");
+		app.process();
+		
+		
+		
+//		long token = System.currentTimeMillis();
+		
 //		al();
 //		momAndSon();
+//		drinkTest();
+//		eatTest();
 //		koreanAndAmerican();
-		drinkTest();
-		eatTest();
 	}
 
 	private static void eatTest() {
 		Man korean = new Korean("홍길동");
 		American american = new American("John");
 		
-		eat(korean);
+//		eat(korean);
+//		eat(american);
 	}
 
-	private static void eat(Man korean) {
-		if(m instanceof Korean) {
-			m.eatRice();
-			
-		}else if(m instanceof American) {
-			((American)m).eatBread();
-		}else {
-			System.out.println("헤딩 인스턴스가 없습니다!");
-		}
-	}
+//	private static void eat(Man m) {
+//		if (m instanceof Korean) {
+//			((Korean)m).eatRice();
+//		} else if (m instanceof American) {
+//			((American)m).eatBread();
+//		} else {
+//			System.out.println("해당 인스턴스가 없습니다!!");
+//		}
+//	}
 
 	private static void drinkTest() {
 		Mom mom = new Mom();
@@ -38,7 +73,6 @@ public class Main {
 		
 		drink(mom);
 		drink(son);
-		
 	}
 
 	private static void drink(Mom m) {
@@ -51,7 +85,6 @@ public class Main {
 		} else {
 			m.drinkBeer();
 		}
-	
 	}
 
 	private static void koreanAndAmerican() {
@@ -70,24 +103,26 @@ public class Main {
 		Mom mom = new Mom();
 		Son son = new Son();
 		
-		mom.eat();
-		son.eat();
+//		mom.eat();
+//		son.eat();
+		eat(mom);
+		eat(son);
 		
-		mom.say();
-		son.say();
+//		mom.say();
+//		son.say();
 	}
 	
 	private static void eat(Mom m) {
-		m = (Son)m;
-		if(m instanceof Mom) {
-			System.out.println("드세요");
-		}else if(m instanceof Son) {
-			System.out.println("먹어");
-		}else {
-			System.out.println("드십시오");
+		if (m instanceof Son) {
+			System.out.println("먹어~");
+			
+		} else if (m instanceof Mom) {
+			System.out.println("드세요~");
+			
+		} else {
+			System.out.println("드십시오!");
 		}
 	}
-	
 
 	private static void al() {
 		ArrayList<Man> people = new ArrayList<>(9);
