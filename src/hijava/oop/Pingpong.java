@@ -1,25 +1,20 @@
 package hijava.oop;
 
-public class Pingpong extends NetSport{
+public class Pingpong extends NetSport {
 
 	@Override
 	public void serve() {
-		// TODO Auto-generated method stub
-		System.out.println("서브");
-		
+		System.out.println("Sky Service!");
 	}
 
 	@Override
 	public void hit() {
-		// TODO Auto-generated method stub
-		System.out.println("스메시");
-		
+//		System.out.println("Smash");
 	}
 
 	@Override
 	public void score() {
-		// TODO Auto-generated method stub
-		System.out.println("점수");
+		System.out.println("1");
 	}
 
 }

@@ -1,11 +1,14 @@
 package hijava.oop;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
 
 	@Override
 	public void bark() {
-		System.out.println("멍");
+		System.out.println("BowWow!");
 	}
 	
+	public static void eat(String food) {
+		System.out.println("Dog eat " + food);
+	}
 
 }

@@ -1,50 +1,23 @@
 package hijava.oop;
 
+import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import hijava.practiec.Man;
 
 public class Main {
 
-	public static void main(String[] args) {
-		AbstSuper sp = new AbstChild();
-		int i = 5;
-		int j = 10;
+	public static void main(String[] args) throws SQLException, IOException {
+//		netsport();
+//		animal();
+//		weight();
 		
-		Animal dog = new Dog();
-		Animal cat = new cat();
-		
-		dog.bark();
-		cat.bark();
-		
-		System.out.println("min=" + sp.min(i, j) +", max=" + sp.max(i, j));
-		
-		
-		NetSport ping = new Pingpong();
-		NetSport volley = new Volleyball();
-		
-		ping.hit();
-		ping.serve();
-		ping.score();
-		
-		volley.hit();
-		volley.serve();
-		volley.score();
-		
-		SoftWare app = new MobileApp();
-		SoftWare site = new WebSite();
-		
-		site.process();
-		System.out.println("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
-		app.process();
-		
-		Calculator n = new CalculatorImpl();
-		
-		n.add(4, 5);
-		n.sub(4, 5);
-		n.mul(4, 5);
-		n.div(4, 5);
-		
+//		AbstSuper sp = new AbstChild();
+//		int i = 5;
+//		int j = 10;
+//		
+//		System.out.println("min=" + sp.min(i, j) +", max=" + sp.max(i, j));
 		
 //		long token = System.currentTimeMillis();
 		
@@ -53,7 +26,59 @@ public class Main {
 //		drinkTest();
 //		eatTest();
 //		koreanAndAmerican();
+		
+//		software();
+//		calculator();
+		
+		testinterface();
 	}
+
+	private static void testinterface() throws SQLException, IOException {
+		TestInterface ti = new TestImpl();
+		ti.select("select * from Table");
+		TestInterface.out(100);
+		
+		Dog.eat("Meat");
+	}
+
+	private static void calculator() {
+		Calculator calc = new CalculatorImpl();
+		int x = 10, y = 5;
+		calc.add(x, y);
+		calc.div(x, y);
+		calc.div(x, 0);
+	}
+
+	private static void software() {
+		SoftWare site = new WebSite();
+		SoftWare app = new MobileApp();
+		
+		String s = "abc";
+		
+		site.product();
+		app.product();
+	}
+
+	private static void netsport() {
+		NetSport pp = new Pingpong();
+
+		pp.play();
+
+	}
+
+	private static void animal() {
+		Animal dog = new Dog();
+		Animal cat = new cat();
+		
+		barkAnimal(dog);
+		barkAnimal(cat);
+	}
+
+	private static void barkAnimal(Animal ani) {
+		ani.bark();
+	}
+
+
 
 	private static void eatTest() {
 		Man korean = new Korean("홍길동");

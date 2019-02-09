@@ -1,21 +1,18 @@
 package hijava.oop;
 
-public class MobileApp extends SoftWare{
-
+public class MobileApp extends SoftWare {
 	@Override
 	public void plan() {
-		System.out.println("게임");
-		
+		System.out.println("App 기획");
 	}
 
 	@Override
-	public void develope() {
-		System.out.println("디자인&코딩");
+	public void develop() {
+		System.out.println("App 개발");
 	}
 
 	@Override
 	public void release() {
-		System.out.println("영상광고");
+		System.out.println("App 출시(오픈)");
 	}
-
 }
